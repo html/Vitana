@@ -1,0 +1,57 @@
+ru:
+  activerecord:
+    first_name: test
+    models:
+      category: категория
+    attributes:
+      category:
+        title: Заголовок
+        menu: Пункт меню
+      album:
+        title: Заголовок
+      photo:
+        title: Заголовок
+        photo: Фото
+      title: Заголовок
+      user:
+        password: Пароль
+  hello: Hello 
+  New: Новая
+  Show: Показать
+  Edit: Редактировать
+  New Album: Создать альбом в категории
+  New Category: Создать категорию
+  New Photo: Добавить фото к альбому
+  All Photos: Все фото
+  All Albums: Все альбомы
+  Back to List: Назад к списку
+  Destroy: Удалить
+  Category: Просмотр категории
+  Categories: Список категорий
+  Edit Category: Редактировать категорию
+  View All: Показать все
+  Edit Album: Редактировать альбом
+  Album: Просмотр альбома
+  Edit Photo: Редактировать фото
+  Photo: Фото
+  Photos: Все фото
+  Title: Заголовок
+  Albums: Список альбомов
+  for album %s: 'к альбому "%s"'
+  for category %s: 'категории "%s"'
+  Successfully updated photo: Успешно обновлено фото
+  Successfully created photo: Успешно добавлено фото
+  Successfully destroyed photo: Успешно удалено фото
+  Successfully created album: Успешно создан альбом
+  Successfully updated album: Успешно обновлен альбом
+  Successfully destroyed album: Успешно удален альбом
+  Successfully created category: Успешно создана категория
+  Successfully updated category: Успешно обновлена категория
+  Successfully destroyed category: Успешно удалена категория
+  Successfully changed image: Успешно изменена картинка
+  Change Image: Изменить картинку
+  No albums in this category: Нет альбомов в данной категории
+  No images in this album: Нет фотографий в данном альбоме
+  Logged in successfully: Успешно вошли
+  You have been logged out: Успешно вышли
+  Couldn't log you in as %s: Невозможно зайти под "%s"
