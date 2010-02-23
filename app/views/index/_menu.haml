@@ -1,0 +1,26 @@
+%table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0" }
+  %tr
+    %td.menu1{ :height => "10" }
+  %tr
+    %td
+      %table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0" }
+        %tr.menu3
+          - @menu_items.each do |item|
+            %td{ :class => (@category == item ? 'menu_aktv' : 'menu2'),  :align => "center", :width => "11%" }
+              = link_to item.title, { :category => item.id }
+          %td.search{ :align => "center", :valign => "middle", :width => "18%" }
+            %table{ :cellspacing => "0", :border => "0", :height => "100%", :width => "100%", :cellpadding => "0" }
+              %tr
+                %td{ :align => "center", :width => "75%" }
+                  %input{ :name => "story", :value => "\320\237\320\276\320\270\321\201\320\272 \320\277\320\276 \321\201\320\260\320\271\321\202\321\203", :type => "text", :style => "font-family:Tahoma;color:#8a8a8a;font-size:10px;border:none; background:url('img/search_bar.png');" }
+                %td{ :width => "25%" }
+                  %input{ :name => "image", :src => "img/search.gif", :type => "image", :align => "left", :height => "15", :alt => "\320\237\320\276\320\270\321\201\320\272 \320\275\320\260 \321\201\320\260\320\271\321\202\320\265" }
+  %tr
+    %td.menu1{ :height => "20", :style => 'padding:5px' }
+      - if @pages.size > 1
+        - @pages.each do |item|
+          = link_to item.title, { :page => item.id }
+          - if item != @pages.last
+            |
+
+

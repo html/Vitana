@@ -1,8 +1,9 @@
 ru:
   activerecord:
-    first_name: test
     models:
       category: категория
+      typus_user: пользователь
+      page: страница
     attributes:
       category:
         title: Заголовок
@@ -13,8 +14,15 @@ ru:
         title: Заголовок
         photo: Фото
       title: Заголовок
-      user:
+      typus_user:
+        first_name: Имя
         password: Пароль
+        last_name: Фамилия
+        role: Роль
+        email: E-Mail
+        password_confirmation: Повторить пароль
+        language: Язык
+        status: Статус
   hello: Hello 
   New: Новая
   Show: Показать

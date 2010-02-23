@@ -1,0 +1,5 @@
+%div
+  - i = true
+  - @pages.each do |item|
+    = render :partial => 'item', :locals => { :item => item, :float => i }
+    - i = !i

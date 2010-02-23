@@ -1,0 +1,26 @@
+Category:
+  fields:
+    list: title, position
+    form: title, content
+  order_by: position
+  search: title
+  application: Категории
+  description: Категории страниц
+  relationships: answers, pages
+Page:
+  fields:
+    list: title, image_file_name, category
+    form: title, content, category, image_file_name
+    options:
+      tiny_mce:
+        fields: content
+  application: Страницы
+  description: Все страницы сайта
+Answer:
+  fields:
+    list: title, category
+    form: title, category, content
+    options:
+      tiny_mce:
+        fields: content
+  application: Содержимое блока "А знаете ли вы ?" 
