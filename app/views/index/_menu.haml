@@ -1,9 +1,9 @@
 %table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0" }
   %tr
-    %td.menu1{ :height => "10" }
+    %td.menu1{ :height => "8" }
   %tr
     %td
-      %table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0" }
+      %table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0", :height => "25" }
         %tr.menu3
           - @menu_items.each do |item|
             %td{ :class => (@category == item ? 'menu_aktv' : 'menu2'),  :align => "center", :width => "11%" }
@@ -16,7 +16,7 @@
                 %td{ :width => "25%" }
                   %input{ :name => "image", :src => "img/search.gif", :type => "image", :align => "left", :height => "15", :alt => "\320\237\320\276\320\270\321\201\320\272 \320\275\320\260 \321\201\320\260\320\271\321\202\320\265" }
   %tr
-    %td.menu1{ :height => "20", :style => 'padding:5px' }
+    %td.menu1{ :height => "28", :style => 'padding:7px' }
       - if @pages.size > 1
         - @pages.each do |item|
           = link_to item.title, { :page => item.id }

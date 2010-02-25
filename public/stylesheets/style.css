@@ -1,14 +1,20 @@
+@font-face {
+  font-family:"Myriad Pro";
+  src:url(/MyriadPro-Regular.ttf) format("truetype");
+}
+
 
 p {
 	font-family:Myriad Pro;
-	font-size:12px;
+	font-size:13px;
 	color:#696c70;
 }
 
 h1 {
 	font-family:Myriad Pro;
-	font-size:14px;
+	font-size:13px;
 	color:#b30f4b;
+    padding-top:8px;
 }
 hr {
 	color: #b30f4b;
@@ -29,9 +35,10 @@ hr {
 }
 .menu_aktv a{
 	font-family: Myriad Pro;
-	font-size:11px; 
+	font-size:12px; 
 	color: #FFF;
 	text-decoration:none;
+    text-transform:uppercase;
 }
 .menu2 {
 	border-left:1px solid #999;
@@ -39,9 +46,10 @@ hr {
 }
 .menu2 a{
 	font-family: Myriad Pro;
-	font-size:11px; 
+	font-size:12px; 
 	color: #b30f4b;
 	text-decoration:none;
+    text-transform:uppercase;
 }
 .menu2 a:hover {
 	color: #696c70;
@@ -61,13 +69,13 @@ hr {
 	padding-top:15px;
 }
 .left1 {
-	border:1px solid #999;
 	font-family:Myriad Pro;
 	font-size:14px;
 	color:#696c70;
 	padding-right:15px;
     padding-top:10px;
     padding-bottom:10px;
+    width: 335px;
 }
 .left2 {
 	margin-bottom:10px;
@@ -76,9 +84,12 @@ hr {
 	margin-top:10px; 
 	padding-left:10px;
 }
+.left2 p {
+  font-size:14px;
+}
 .left3 {
 	font-family:Myriad Pro;
-	font-size:14px;
+	font-size:15px;
 	color:#FFF;
 	background-image:url(/img/aktv.png); 
 	padding-left:10px;
@@ -86,8 +97,10 @@ hr {
 	padding-bottom:3px;
 }
 .left4 {
-	border:1px solid #999;
 	/*padding-top:15px;*/
+}
+.left4 p {
+  font-size:13px;
 }
 .d a {
 	color:#b30f4b;
@@ -96,7 +109,6 @@ hr {
 	text-decoration:none;
 }
 .content1 {
-	border:1px solid #999;
 	padding-bottom:38px;
 	padding-left:15px;
 }
@@ -113,7 +125,7 @@ hr {
 .footer1 {
 	overflow:hidden; 
 	font-family: Myriad Pro;
-	font-size:10px;
+	font-size:12px;
 	color: #696c70; 
 	text-decoration:none;
 	padding-bottom:5px;
@@ -132,9 +144,10 @@ hr {
 }
 .footer1 a {
 	font-family: Myriad Pro;
-	font-size:10px;
+	font-size:11px;
 	color: #696c70; 
 	text-decoration:none;
+    text-transform:uppercase;
 }
 .menu1 li {
 	float: left;
@@ -150,7 +163,7 @@ hr {
 }
 .menu1 a{
 	font-family: Myriad Pro;
-	font-size:11px; 
+	font-size:12px; 
 	color: #fff;
 	text-decoration:none;
 }
@@ -161,18 +174,17 @@ hr {
     padding:10px;
     width: 472px;
     float:left;
-	border:1px solid #999;
 	margin-top:10px;
 }
 .content2 h1 {
-    font-size: 13px;
+    font-size: 16px;
     padding:0;
     margin: 0;
     font-weight: normal;
 }
 .content hr {
-    margin-top: 2px;
-    margin-bottom: 4px;
+    margin-top: 10px;
+    margin-bottom: 8px;
 }
 .content p {
     margin: 0;
