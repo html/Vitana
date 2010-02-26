@@ -2,3 +2,4 @@ admin:
   Category: create, read, update, delete
   Page: create, read, update, delete
   Answer: create, read, update, delete
+  Image: create, read, update, delete

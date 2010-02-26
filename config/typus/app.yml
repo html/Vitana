@@ -6,7 +6,7 @@ Category:
   search: title
   application: Категории
   description: Категории страниц
-  relationships: answers, pages
+  relationships: pages
 Page:
   fields:
     list: title, image_file_name, category
@@ -18,9 +18,14 @@ Page:
   description: Все страницы сайта
 Answer:
   fields:
-    list: title, category
-    form: title, category, content
+    list: title 
+    form: title, content
     options:
       tiny_mce:
         fields: content
   application: Содержимое блока "А знаете ли вы ?" 
+Image:
+  fields:
+    list: image_file_name
+    form: image_file_name
+  application: Галерея

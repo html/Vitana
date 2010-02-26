@@ -12,9 +12,15 @@ class IndexController < ApplicationController
     end
 
     if @category.show_answers
-      @answers = @category.answers.random_two
+      @answers = Answer.random_two
     else
       @answers = []
+    end
+
+    if @category.show_gallery
+      @images  = Image.random_three
+    else
+      @images = []
     end
 
     @pages =@category.pages

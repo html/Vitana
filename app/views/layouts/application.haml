@@ -6,6 +6,9 @@
       Документ без названия
     = stylesheet_link_tag 'style.css'
     = javascript_include_tag 'jquery-1.3.2'
+    - if !@images.empty?
+      = javascript_include_tag '/fancybox/jquery.fancybox-1.3.0.js'
+      = stylesheet_link_tag '/fancybox/jquery.fancybox-1.3.0.css'
   %body
     %table.main{ :cellspacing => "0", :border => "0", :align => "center", :width => "1000", :cellpadding => "0", :style => "margin:0 auto" }
       %tr
@@ -31,6 +34,7 @@
                                 %i
                                   = simple_format(h(@category.content))
                     = render :partial => 'answers'
+                    = render :partial => 'gallery'
               %td{ :valign => "top", :style => (!has_content_for_left_block ? '' : "padding-left:10px;") }
                 %table{:class => (@pages.size > 1 && !defined?(@page) ? '' : 'content1'),  :cellspacing => "0", :width => "100%", :cellpadding => "0" }
                   %tr

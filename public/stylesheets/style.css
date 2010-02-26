@@ -233,3 +233,7 @@ hr {
   width: 161px;
   padding:5px 10px 0 10px;
 }
+
+img {
+  border: 0;
+}

@@ -1,3 +1,5 @@
 class Answer < ActiveRecord::Base
-  belongs_to :category
+  def self.random_two
+    find(:all, :order => 'RANDOM()', :limit => 2)
+  end
 end
