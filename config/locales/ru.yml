@@ -8,6 +8,8 @@ ru:
       category:
         title: Заголовок
         menu: Пункт меню
+        show_answers: Показывать блок "А знаете ли Вы ?"
+        show_gallery: Показывать галерею
       album:
         title: Заголовок
       photo:

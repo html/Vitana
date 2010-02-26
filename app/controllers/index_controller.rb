@@ -11,7 +11,12 @@ class IndexController < ApplicationController
       @category = Category.first :order => :position
     end
 
-    @answers = @category.answers
+    if @category.show_answers
+      @answers = @category.answers.random_two
+    else
+      @answers = []
+    end
+
     @pages =@category.pages
   end
 end

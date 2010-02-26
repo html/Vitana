@@ -1,7 +1,7 @@
 Category:
   fields:
     list: title, position
-    form: title, content
+    form: title, show_answers, show_gallery, content
   order_by: position
   search: title
   application: Категории

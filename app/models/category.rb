@@ -1,7 +1,11 @@
 class Category < ActiveRecord::Base
   acts_as_list
   has_many :pages
-  has_many :answers
+  has_many :answers do
+    def random_two
+      find(:all, :order => 'RANDOM()', :limit => 2)
+    end
+  end
   #acts_as_tree  :order => "position"
   #validate :validates_max_nest_level
 
