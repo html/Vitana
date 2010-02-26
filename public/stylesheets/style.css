@@ -14,7 +14,7 @@ h1 {
 	font-family:Myriad Pro;
 	font-size:13px;
 	color:#b30f4b;
-    padding-top:8px;
+    padding-top:0px;
 }
 hr {
 	color: #b30f4b;
@@ -39,9 +39,10 @@ hr {
 	color: #FFF;
 	text-decoration:none;
     text-transform:uppercase;
+    margin:0 3px;
 }
 .menu2 {
-	border-left:1px solid #999;
+	border-left:1px solid #C7CCD3;
 	background-image:url(/img/menu2.png);
 }
 .menu2 a{
@@ -50,23 +51,19 @@ hr {
 	color: #b30f4b;
 	text-decoration:none;
     text-transform:uppercase;
+    margin:0 3px;
 }
 .menu2 a:hover {
 	color: #696c70;
 	text-decoration:underline;
 }
 .menu3 {
-	
-	padding-top:3px;
-	padding-bottom:3px;
 } 
 .search {
-	padding-top:3px;
-	padding-bottom:3px; 
 	background-image:url(/img/menu2.png);
 }
 .content {
-	padding-top:15px;
+	padding-top:5px;
 }
 .left1 {
 	font-family:Myriad Pro;
@@ -110,7 +107,7 @@ hr {
 }
 .content1 {
 	padding-bottom:38px;
-	padding-left:15px;
+	padding-left:10px;
 }
 .sertifikat {
 	border:1px solid #999;
@@ -188,6 +185,7 @@ hr {
 }
 .content p {
     margin: 0;
+    padding-bottom: 8px;
 }
 .gallery {
 	padding-top:10px;
@@ -215,4 +213,12 @@ hr {
 }
 .table-td {
 	text-align: left !important;
+}
+
+.fl {
+  float:left;
+}
+
+.fr {
+  float:right;
 }

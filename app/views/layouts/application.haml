@@ -30,7 +30,7 @@
                                 %i
                                   = simple_format(h(@category.content))
                     = render :partial => 'answers'
-              %td{ :valign => "top", :style => (!has_content_for_left_block ? '' : "padding-left:15px;") }
+              %td{ :valign => "top", :style => (!has_content_for_left_block ? '' : "padding-left:10px;") }
                 %table{:class => (@pages.size > 1 && !defined?(@page) ? '' : 'content1'),  :cellspacing => "0", :width => "100%", :cellpadding => "0" }
                   %tr
                     %td
