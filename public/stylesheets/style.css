@@ -222,3 +222,25 @@ hr {
 .fr {
   float:right;
 }
+
+.searchbar {
+  font-family: Tahoma;
+  color:#8a8a8a;
+  font-size:10px;
+  border:none;
+  background: no-repeat url('/img/search_bar.png') 0 0;
+  height: 15px;
+  width: 161px;
+  padding:5px 10px 0 10px;
+}
+
+.searchbaractive {
+  font-family: Tahoma;
+  color:#8a8a8a;
+  font-size:10px;
+  border:none;
+  background: no-repeat url('/img/search_bar.png') 0 -25px;
+  height: 15px;
+  width: 161px;
+  padding:5px 10px 0 10px;
+}
