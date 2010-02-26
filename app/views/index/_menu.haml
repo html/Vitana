@@ -12,9 +12,9 @@
       .fr
         .search
           .fl
-            %input.searchbar{ :name => "story", :type => "text"}
+            %input.searchbar{ :name => "story", :type => "text", :value => "поиск по сайту"}
           .fl
-            %input{ :name => "image", :src => "img/search.gif", :type => "image", :align => "left", :height => "25", :alt => "\320\237\320\276\320\270\321\201\320\272 \320\275\320\260 \321\201\320\260\320\271\321\202\320\265" }
+            %input{ :name => "image",  :src => "img/search.gif", :type => "image", :align => "left", :height => "25" }
   %tr
     %td.menu1{ :height => "28", :style => 'padding:7px' }
       - if @pages.size > 1
@@ -26,9 +26,11 @@
 
 :javascript
   $(function(){
+    var searchtext = '';
     $('.searchbar').focus(function(){
-      $(this).addClass('searchbaractive');
+      $(this).val(searchtext);
     }).blur(function(){
-      $(this).removeClass('searchbaractive');
+      searchtext = $(this).val();
+      $(this).val('поиск по сайту');
     });
   });
