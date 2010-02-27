@@ -1,3 +1,7 @@
+body {
+  margin:0;
+  padding:0;
+}
 @font-face {
   font-family:"Myriad Pro";
   src:url(/MyriadPro-Regular.ttf) format("truetype");
@@ -73,12 +77,13 @@ hr {
     padding-top:10px;
     padding-bottom:10px;
     width: 335px;
+    border: 1px solid #E1E1E1;
+    margin-top:3px;
 }
 .left2 {
 	margin-bottom:10px;
 	margin-left:10px;
-	margin-right:10px;
-	margin-top:10px; 
+	margin-padding:10px;
 	padding-left:10px;
 }
 .left2 p {
@@ -106,8 +111,10 @@ hr {
 	text-decoration:none;
 }
 .content1 {
+    margin-top:3px;
 	padding-bottom:38px;
 	padding-left:10px;
+    border: 1px solid #E1E1E1;
 }
 .sertifikat {
 	border:1px solid #999;
