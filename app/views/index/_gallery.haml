@@ -10,7 +10,7 @@
           %tr
             %td{ :style => "padding:10px 10px #{item== @images.last ? '10px' : '0'} 10px;border: 1px solid #E1E1E1;border-top:none;" + (item == @images.last ? '' : "border-bottom: none;")  }
               = link_to image_tag(item.image.url(:thumbnail), :alt => ''), item.image.url, :class => 'fancybox', :title => '', :rel => 'fancy'
-:javascript
-  $(function(){
-    $('.fancybox').fancybox();
-  });
+  :javascript
+    $(function(){
+      $('.fancybox').fancybox();
+    });
