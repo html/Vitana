@@ -6,9 +6,8 @@
       Документ без названия
     = stylesheet_link_tag 'style.css'
     = javascript_include_tag 'jquery-1.3.2'
-    - if !@images.empty?
-      = javascript_include_tag '/fancybox/jquery.fancybox-1.3.0.js'
-      = stylesheet_link_tag '/fancybox/jquery.fancybox-1.3.0.css'
+    = javascript_include_tag '/fancybox/jquery.fancybox-1.3.0.js'
+    = stylesheet_link_tag '/fancybox/jquery.fancybox-1.3.0.css'
   %body
     %table.main{ :cellspacing => "0", :border => "0", :align => "center", :width => "1000", :cellpadding => "0", :style => "margin:0 auto" }
       %tr
