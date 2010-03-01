@@ -245,3 +245,23 @@ hr {
 img {
   border: 0;
 }
+
+img.left {
+  margin-right:5px;
+}
+
+img.right {
+  margin-left:5px;
+}
+
+.contacts {
+	font-size:13px; 
+	font-family: "Myriad Pro", Tahoma;
+}
+.contacts a {
+	color: #b30f4b;
+    text-decoration:none;
+}
+.contacts a:hover {
+    text-decoration:underline;
+}

@@ -6,6 +6,7 @@
     = @pages.first.content
   - else
     - if defined?(@page)
+      %h1= h @page.title
       = @page.content
     - else
       = render :partial => 'items'

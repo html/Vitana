@@ -20,8 +20,8 @@
         %td
           %table.content{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0", :style => (@pages.size > 1 && !defined?(@page) ? 'padding-top: 0;' : '') }
             %tr
-              - if defined?(@category) && defined?(@answers)
-                - has_content_for_left_block = !@category.content.strip.empty? || !@answers.empty?
+              - if defined?(@category) && defined?(@answers) && defined?(@page)
+                - has_content_for_left_block = !@category.content.strip.empty? || !@answers.empty? || !@images.empty?
                 = render :partial => 'left', :locals => { :has_content_for_left_block => has_content_for_left_block}
               - else
                 - has_content_for_left_block = false
