@@ -1,0 +1,11 @@
+- case @pages.size
+  - when 0
+    %p
+      Создайте страницу
+  - when 1
+    = @pages.first.content
+  - else
+    - if defined?(@page)
+      = @page.content
+    - else
+      = render :partial => 'items'

@@ -8,13 +8,14 @@
           %tr.menu3
             - @menu_items.each do |item|
               %td{ :class => (@category == item ? 'menu_aktv' : 'menu2'),  :align => "center", :style => 'padding-top:5px'}
-                = link_to item.title, { :category => item.id }
+                = link_to item.title, { :action => :index, :category => item.id }
       .fr
-        .search
-          .fl
-            %input.searchbar{ :name => "story", :type => "text", :value => "поиск по сайту"}
-          .fl
-            %input{ :name => "image",  :src => "img/search.gif", :type => "image", :align => "left", :height => "25" }
+        - form_tag :action => :search, :controller => :index, :html => { :method => :get } do
+          .search
+            .fl
+              %input.searchbar{ :name => "q", :type => "text", :value => "поиск по сайту"}
+            .fl
+              %input{ :name => "image",  :src => "/img/search.gif", :type => "image", :align => "left", :height => "25" }
   %tr
     %td.menu1{ :height => "28", :style => 'padding:7px' }
       - if @pages.size > 1
@@ -31,6 +32,7 @@
       $(this).val(searchtext);
     }).blur(function(){
       searchtext = $(this).val();
-      $(this).val('поиск по сайту');
+      if(!searchtext)
+        $(this).val('поиск по сайту');
     });
   });

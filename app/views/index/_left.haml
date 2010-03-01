@@ -1,0 +1,14 @@
+- has_content_for_left_block = !@category.content.strip.empty? || !@answers.empty?
+- if has_content_for_left_block
+  %td{ :valign => "top", :width => "25%" }
+    %table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0" }
+      - if !@category.content.strip.empty?
+        %tr
+          %td
+            %table.left1{ :cellspacing => "0", :width => "100%", :cellpadding => "0" }
+              %tr
+                %td.left2{ :align => "left" }
+                  %i
+                    = simple_format(h(@category.content))
+      = render :partial => 'answers'
+      = render :partial => 'gallery'
