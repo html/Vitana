@@ -10,7 +10,7 @@
               %td{ :class => (@category == item ? 'menu_aktv' : 'menu2'),  :align => "center", :style => 'padding-top:5px'}
                 = link_to item.title, { :action => :index, :category => item.id }
       .fr
-        - form_tag :action => :search, :controller => :index, :html => { :method => :get } do
+        - form_tag({ :action => :search, :controller => :index}, { :method => :get }) do
           .search
             .fl
               %input.searchbar{ :name => "q", :type => "text", :value => "поиск по сайту"}

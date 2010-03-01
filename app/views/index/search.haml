@@ -1,0 +1,29 @@
+%div{ :style => "clear:both;padding-top:10px" }
+- show_search = !defined?(@results)
+- if defined?(@results)
+  %h1= "Результаты поиска по запросу '%s'" % h(params[:q])
+  - if !@results.empty?
+    - form_tag({ :action => :search, :controller => :index}, { :method => :get}) do
+      = text_field_tag 'q', params[:q]
+      = submit_tag 'Искать'
+    %br
+    - @results.each do |res|
+      = link_to(highlight(h(res['title']), @values), { res['item_type'] => res['id'], :action => :index }, { :class => 'search'})
+      %br
+      = highlight((truncate(strip_tags(res['content']), 300)), @values)
+      %br
+      %br
+    - form_tag({ :action => :search, :controller => :index}, { :method => :get}) do
+      = text_field_tag 'q', params[:q]
+      = submit_tag 'Искать'
+  - else
+    - show_search = true
+    Поиск результатов не дал
+    %br
+    %br
+
+- if show_search
+  Пожалуйста введите запрос для поиска
+  - form_tag({ :action => :search, :controller => :index}, { :method => :get}) do
+    = text_field_tag 'q', params[:q]
+    = submit_tag 'Искать'

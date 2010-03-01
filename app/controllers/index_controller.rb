@@ -19,7 +19,8 @@ class IndexController < ApplicationController
     @pages = []
 
     if params[:q]
-      @results = []
+      @results = Search.find(params[:q])
+      @values = params[:q].to_s.split /\s+/
     end
   end
 
