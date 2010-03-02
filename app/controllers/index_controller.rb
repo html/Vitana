@@ -40,15 +40,16 @@ class IndexController < ApplicationController
         @answers = []
       end
 
-      if @category.show_gallery
-        @images  = Image.random_three
-      else
-        @images = []
-      end
-
       @pages =@category.pages
       if @pages.size == 1
         @page = @pages.first
+      end
+
+
+      if @category.show_gallery && @page
+        @images  = Image.random_three @page
+      else
+        @images = []
       end
     end
 end

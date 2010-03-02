@@ -19,11 +19,6 @@ ru:
         show_answers: Показывать блок "А знаете ли Вы ?"
         show_gallery: Показывать галерею
         content: Описание категории. Если есть показывается в левой части страницы для всех страниц категории
-      album:
-        title: Заголовок
-      photo:
-        title: Заголовок
-        photo: Фото
       typus_user:
         first_name: Имя
         password: Пароль
@@ -33,6 +28,8 @@ ru:
         password_confirmation: Повторить пароль
         language: Язык
         status: Статус
+      image:
+        page: Страница
   hello: Hello 
   New: Новая
   Show: Показать

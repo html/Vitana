@@ -16,6 +16,7 @@ Page:
         fields: content
   application: Страницы
   description: Все страницы сайта. Содержатся в категориях. Если добавляете в одну категорию несколько страниц не забудьте добавить списочные картинки к каждой странице
+  relationships: images
 Answer:
   fields:
     list: title 
@@ -28,6 +29,6 @@ Answer:
 Image:
   fields:
     list: image_file_name
-    form: image_file_name
+    form: page, image_file_name
   application: Галерея
   description: Галерея сайта (блок из трех случайных картинок, можно подключать для любой категории)

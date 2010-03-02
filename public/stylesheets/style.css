@@ -275,3 +275,9 @@ img.right {
 a.search{
   color: #b30f4b;
 }
+
+.certs img {
+  display:inline;
+  float:none;
+  margin:0;
+}
