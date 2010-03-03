@@ -5,7 +5,7 @@
         %tr
           %td.left3{ :align => "left" }
             %i
-              Галлерея нашей продукции
+              Использование на обьектах
         - @images.each do |item|
           %tr
             %td{ :style => "padding:10px 10px #{item== @images.last ? '10px' : '0'} 10px;border: 1px solid #E1E1E1;border-top:none;" + (item == @images.last ? '' : "border-bottom: none;")  }
