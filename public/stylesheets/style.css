@@ -2,20 +2,15 @@ body {
   margin:0;
   padding:0;
 }
-@font-face {
-  font-family:"Myriad Pro";
-  src:url(/MyriadPro-Regular.ttf) format("truetype");
-}
-
 
 p {
-	font-family: "Myriad Pro", Tahoma;
+	font-family: "MyriadProRegular", Tahoma;
 	font-size:13px;
 	color:#696c70;
 }
 
 h1 {
-	font-family: "Myriad Pro", Tahoma;
+	font-family: "MyriadProRegular", Tahoma;
 	font-size:13px;
 	color:#b30f4b;
     padding-top:0px;
@@ -39,7 +34,7 @@ hr {
 	background-image:url(/img/aktv.png);
 }
 .menu_aktv a{
-	font-family: "Myriad Pro", Tahoma;
+	font-family: "MyriadProRegular", Tahoma;
 	font-size:12px; 
 	color: #FFF;
 	text-decoration:none;
@@ -51,7 +46,7 @@ hr {
 	background-image:url(/img/menu2.png);
 }
 .menu2 a{
-	font-family: "Myriad Pro", Tahoma;
+	font-family: "MyriadProRegular", Tahoma;
 	font-size:12px; 
 	color: #b30f4b;
 	text-decoration:none;
@@ -71,7 +66,7 @@ hr {
 	padding-top:5px;
 }
 .left1 {
-	font-family:"Myriad Pro", Tahoma;
+	font-family:"MyriadProRegular", Tahoma;
 	font-size:14px;
 	color:#696c70;
 	padding-right:15px;
@@ -91,13 +86,17 @@ hr {
   font-size:14px;
 }
 .left3 {
-	font-family:"Myriad Pro", Tahoma;
+    line-height:18px;
+	font-family:"MyriadProRegular", Tahoma;
 	font-size:15px;
 	color:#FFF;
 	background-image:url(/img/aktv.png); 
 	padding-left:10px;
 	padding-top:3px;
 	padding-bottom:3px;
+}
+.left3 i {
+  margin-top:3px;
 }
 .left4 {
 	/*padding-top:15px;*/
@@ -107,7 +106,7 @@ hr {
 }
 .d a {
 	color:#b30f4b;
-	font-family:"Myriad Pro", Tahoma;
+	font-family:"MyriadProRegular", Tahoma;
 	font-size:12px; 
 	text-decoration:none;
 }
@@ -129,7 +128,7 @@ hr {
 }
 .footer1 {
 	overflow:hidden; 
-	font-family: "Myriad Pro", Tahoma;
+	font-family: "MyriadProRegular", Tahoma;
 	font-size:12px;
 	color: #696c70; 
 	text-decoration:none;
@@ -148,7 +147,7 @@ hr {
 	border-right: 1px solid #696c70;
 }
 .footer1 a {
-	font-family: "Myriad Pro", Tahoma;
+	font-family: "MyriadProRegular", Tahoma;
 	font-size:11px;
 	color: #696c70; 
 	text-decoration:none;
@@ -161,13 +160,15 @@ hr {
 	border-right: 1px solid #fff;
 }
 .menu1 {
-	font-family: "Myriad Pro", Tahoma;
+    height:14px;
+    line-height: 14px;
+	font-family: "MyriadProRegular", Tahoma;
 	font-size:11px; 
 	color: #fff;
 	text-decoration:none;
 }
 .menu1 a{
-	font-family: "Myriad Pro", Tahoma;
+	font-family: "MyriadProRegular", Tahoma;
 	font-size:12px; 
 	color: #fff;
 	text-decoration:none;
@@ -206,7 +207,7 @@ hr {
 	
 }
 .text {
-	font-family:"Myriad Pro";
+	font-family:"MyriadProRegular";
 	font-size:12px;
 	color:#696c70;
 }
@@ -256,7 +257,7 @@ img.right {
 
 .contacts {
 	font-size:13px; 
-	font-family: "Myriad Pro", Tahoma;
+	font-family: "MyriadProRegular", Tahoma;
 }
 .contacts a {
 	color: #b30f4b;
