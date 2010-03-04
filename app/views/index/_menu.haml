@@ -7,7 +7,7 @@
         %table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0", :height => "25" }
           %tr.menu3
             - @menu_items.each do |item|
-              %td{ :class => (@category == item ? 'menu_aktv' : 'menu2'),  :align => "center", :style => 'padding-top:5px'}
+              %td{ :class => (@category == item || @parent && @parent == item ? 'menu_aktv' : 'menu2'),  :align => "center", :style => 'padding-top:5px'}
                 = link_to item.title, { :action => :index, :category => item.id }
       .fr
         - form_tag({ :action => :search, :controller => :index}, { :method => :get }) do
@@ -18,10 +18,10 @@
               %input{ :name => "image",  :src => "/img/search.gif", :type => "image", :align => "left", :height => "25" }
   %tr
     %td.menu1{ :height => "28", :style => 'padding:7px' }
-      - if @pages.size > 1
-        - @pages.each do |item|
-          = link_to item.title, { :page => item.id }
-          - if item != @pages.last
+      - if @submenu_items.size > 1
+        - @submenu_items.each do |item|
+          = link_to item.title, { param_key_for(item) => item.id }
+          - if item != @submenu_items.last
             |
 
 

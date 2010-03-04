@@ -1,8 +1,9 @@
 class Category < ActiveRecord::Base
   acts_as_list
   has_many :pages
-  #acts_as_tree  :order => "position"
-  #validate :validates_max_nest_level
+  acts_as_tree  :order => "position"
+  validate :validates_max_nest_level
+  has_attached_file :image, :styles => { :original => "145x110#" }, :default_url => '/images/missing140x110.png'
 
   def typus_name
     title

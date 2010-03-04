@@ -7,4 +7,4 @@
     %p=truncate(item.content, 120)
     %div{ :style => "vertical-align: bottom" } 
     %p.d{ :align => 'right', :style => "vertical-align: bottom" }
-      = link_to 'далее >>>', :page => item.id
+      = link_to 'далее >>>', param_key_for(item) => item.id
